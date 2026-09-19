@@ -99,3 +99,6 @@ finance_related_absence_days_12m
 financial_wellness_program_participation
 preferred_financial_support_channel
 target_financial_wellbeing_category
+
+Total monthly expenses already include monthly debt payments. Debt payment is also displayed separately when explaining a customer's spending. Emergency fund months are based on essential expenses plus debt payments. Discretionary spending is not included in the emergency fund calculation. Debt-to-income ratio is based on household monthly income.
+The dataset caps debt-to-income values at 85%.
