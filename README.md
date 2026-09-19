@@ -6,6 +6,39 @@ summarize(df)
 get_spending(category, days)
 project_savings(goal, months)
 
+## Data Cleaning
+
+The original dataset contained financial values in Indian Rupees (INR). For consistency with the project, these values were converted to U.S. Dollars (USD).
+
+Exchange rate used: **1 INR = 0.010 USD**  
+Date used: **September 19, 2026**
+
+The following columns were converted from INR to USD:
+
+- monthly_income_inr
+- household_monthly_income_inr
+- rent_or_emi_inr
+- food_expense_inr
+- utilities_expense_inr
+- transport_expense_inr
+- healthcare_expense_inr
+- education_expense_inr
+- discretionary_expense_inr
+- total_monthly_expenses_inr
+- monthly_debt_payment_inr
+- total_debt_inr
+- unexpected_expense_inr_12m
+- liquid_assets_inr
+- investment_amount_inr
+
+After conversion, these columns were renamed from `_inr` to `_usd` and rounded to whole dollar values.
+
+Percentages, credit scores, month counts, loan counts, and 1–10 score columns were left unchanged.
+
+The original `monthly_savings_inr` and `savings_rate_pct` columns were not used because they contained inconsistent values. A new `monthly_surplus_usd` column was calculated as household monthly income minus total monthly expenses.
+
+A new `surplus_rate_pct` column was calculated as monthly surplus divided by household monthly income.
+
 column names: 
 customer_id
 age
