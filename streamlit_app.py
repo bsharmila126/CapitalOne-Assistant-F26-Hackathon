@@ -15,9 +15,9 @@ DIFY_API_KEY = st.secrets["DIFY_API_KEY"]
 # =========================================================
 
 st.set_page_config(
-    page_title="General Financial Advisor",
-    layout="centered",
-    initial_sidebar_state="collapsed"
+    page_title= "ICICI Banking Financial Advisor",
+    layout= "centered",
+    initial_sidebar_state= "collapsed"
 )
 
 
@@ -74,7 +74,7 @@ h2, h3 {
 # TITLE
 # =========================================================
 
-st.title("Financial Advisor")
+st.title("ICICI Banking Financial Advisor")
 
 st.write(
     "Get personalized financial guidance based on your financial profile."
