@@ -102,3 +102,17 @@ target_financial_wellbeing_category
 
 Total monthly expenses already include monthly debt payments. Debt payment is also displayed separately when explaining a customer's spending. Emergency fund months are based on essential expenses plus debt payments. Discretionary spending is not included in the emergency fund calculation. Debt-to-income ratio is based on household monthly income.
 The dataset caps debt-to-income values at 85%.
+
+
+##UI, Deployment, and Testing
+- Built the Streamlit user interface for the financial advisor chatbot
+- Implemented the chat interface and session-based conversation history
+- Added quick-action buttons for common financial questions
+- Integrated the frontend with the chatbot response flow
+- Tested error handling and user interactions
+- Tested the application on desktop and mobile devices
+- Tested responsive behavior in portrait and landscape modes
+- Deployed and tested the application through Streamlit
+
+
+
